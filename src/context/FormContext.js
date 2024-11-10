@@ -11,6 +11,7 @@ export const FormProvider = ({ children }) => { // This is the provider that wra
     billingType: "annualRevenue",
     rate: 40,
     sum: 0,
+    amil: '',
     status: false
   });
 

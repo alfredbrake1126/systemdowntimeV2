@@ -37,9 +37,9 @@ const VideoPlayer = ({ src, title, autoPlay, onVideoEnd }) => {
       <div className="relative w-full h-[calc(100vh-176px)]">
         <video 
           ref={videoRef}
-          className="absolute top-0 left-0 w-full h-full" 
-          controls 
-          autoPlay={autoPlay} 
+          className="absolute top-0 left-0 w-full h-full"  
+          autoPlay={autoPlay}
+          controls={false}
           onEnded={onVideoEnd}
         >
           <source src={src} type="video/mp4" />

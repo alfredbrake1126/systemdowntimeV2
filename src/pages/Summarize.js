@@ -31,15 +31,7 @@ const Summarize = () => {
     currency: 'GBP'
   }).format(salary);
   const daysDown = formData.daysDown;
-  const billingType = formData.billingType;
-  let revenueTitle = "";
-  if (billingType === "annualRevenue") {
-    revenueTitle = "Revenue/Year";
-  } else if (billingType === "dailyBilling") {
-    revenueTitle = "Revenue/Day";
-  } else {
-    revenueTitle = "Revenue/Hour";
-  }
+  let revenueTitle = "Annual Revenue";
   const rate = formData.rate;
   const formattedRate = new Intl.NumberFormat('en-GB', {
     style: 'currency',
@@ -87,11 +79,11 @@ const Summarize = () => {
 
           <div className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gray-100 p-6 text-center rounded-md">
-              <p className="text-gray-500">Total Employee</p>
+              <p className="text-gray-500">Employees</p>
               <p className="text-3xl lg:text-xl font-bold">{employees}</p>
             </div>
             <div className="bg-green-100 p-6 text-center rounded-md">
-              <p className="text-gray-500">Avg Paid/Year</p>
+              <p className="text-gray-500">Average Salary</p>
               <p className="text-3xl lg:text-xl font-bold">{formattedSalary}</p>
             </div>
             <div className="bg-gray-100 p-6 text-center rounded-md">
@@ -99,13 +91,13 @@ const Summarize = () => {
               <p className="text-3xl lg:text-xl font-bold">{formattedRate}</p>
             </div>
             <div className="bg-green-100 p-6 text-center rounded-md">
-              <p className="text-gray-500">Down Days</p>
+              <p className="text-gray-500">Days Down</p>
               <p className="text-3xl lg:text-xl font-bold">{daysDown}</p>
             </div>
           </div>
 
           <button
-            className="mt-8 px-6 py-3 border-2 border-pink-500 text-black hover:bg-pink-500 hover:text-white rounded-md font-semibold uppercase w-[16rem] text-lg tracking-wide"
+            className="px-6 py-3 border-2 border-pink-500 text-black hover:bg-pink-500 hover:text-white rounded-md font-semibold uppercase w-[16rem] text-lg tracking-wide"
             onClick={handleSubmit}
           >
             What Have I Won?

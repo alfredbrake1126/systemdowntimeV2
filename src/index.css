@@ -35,3 +35,11 @@ header {
   display: flex;
   justify-content: center;
 }
+
+table tr td {
+  padding: 1rem;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
