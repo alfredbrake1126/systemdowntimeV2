@@ -106,7 +106,7 @@ const HomePage = () => {
                               setEmployees(0); 
                             }
                           }}
-                          className="w-24 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
+                          className="w-36 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
                         />
                         <span className="text-pink-600 font-bold invisible">£</span>
                       </div>
@@ -146,7 +146,7 @@ const HomePage = () => {
                                 setSalary(0); 
                             }
                           }}
-                          className="w-24 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
+                          className="w-36 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
                         />
                         <span className="text-pink-600 font-bold invisible">£</span>
                       </div>
@@ -186,7 +186,7 @@ const HomePage = () => {
                               setDaysDown(0);
                             }
                           }}
-                          className="w-24 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
+                          className="w-36 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
                         />
                         <span className="text-pink-600 font-bold invisible">£</span>
                       </div>
@@ -226,7 +226,7 @@ const HomePage = () => {
                               setRate(0);
                             }
                           }}
-                          className="w-24 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
+                          className="w-36 text-center text-pink-600 font-bold bg-transparent focus:outline-none border-dashed border-2 border-pink-600"
                         />
                         <span className="text-pink-600 font-bold invisible">£</span>
                       </div>
